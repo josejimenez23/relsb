@@ -547,7 +547,7 @@ img {
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 #boton-arriba:hover {
