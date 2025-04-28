@@ -116,7 +116,6 @@ nav ul li a:hover {
   transition: all 0.4s ease;
 }
 
-/* Cambios cuando está activo */
 .menu-toggle.active .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -593,6 +592,7 @@ footer ul li a:hover {
     flex-direction: column;
     font-size: 40px;
     gap: 1rem;
+    text-align: center;
   }
 
   header {
