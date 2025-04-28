@@ -98,6 +98,64 @@ nav ul li a:hover {
   color: #007bff;
   text-shadow: 0 0 5px #2b8cf3, 0 0 10px #2b8cf3, 0 0 15px #2b8cf3, 0 0 20px #ffffff;
 }
+/* ============================
+   MENÚ HAMBURGUESA
+=============================== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  transition: all 0.4s ease;
+}
+
+/* Cambios cuando está activo */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
 
 /* ============================
    INICIO
