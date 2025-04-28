@@ -592,7 +592,6 @@ footer ul li a:hover {
     flex-direction: column;
     font-size: 40px;
     gap: 1rem;
-    text-align: center;
   }
 
   header {
